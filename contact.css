@@ -1,0 +1,21 @@
+
+
+footer {
+	text-align: center;
+	padding-bottom: 20px !important;
+}
+.form {
+	vertical-align: middle;
+}
+
+h1 {
+	padding-left: 10%;
+}
+
+label {
+	padding-top: 2%;
+}
+
+h4 {
+	font-weight: 500 !important;
+}

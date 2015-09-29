@@ -1,0 +1,199 @@
+body {
+	font-size: 1.4em;
+padding-bottom: 10px;
+text-align: center;
+font-weight: 400;
+
+}
+
+.height {
+	min-height: 750px;
+		color:#4747D1;
+	font-family: "proxima-nova";
+font-size: 1.05em;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 0px;
+font-weight: 100;
+font-style: normal;
+line-height: 2em;
+margin: 0 auto;
+color: #55565b;
+text-align: center;
+padding: 20px;
+}
+
+
+.image img {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	border: solid;
+	display: block;
+	margin: 0 auto;
+
+}
+* {margin: 0; padding: 0;}
+
+.tree ul {
+	padding-top: 50px; 
+	position: relative;
+	
+}
+
+
+.tree li {
+	 text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 5px;
+}
+
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; 
+	top: 0; 
+	right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; 
+	height: 20px;
+}
+
+
+.tree li::after{
+	left: 50%;
+	border-left: 1px solid #ccc;
+}
+
+
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+
+.tree li:first-child::before {
+	border: 0 none;
+} 
+
+.tree ul li:last-child::after {
+	border: none;
+}
+
+.tree li:last-child::before{
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+}
+
+
+
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #ccc;
+	width: 0; 
+	height: 50px;
+}
+
+
+.tree li a{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #666;
+	font-size: 11px;
+	display: inline-block;
+	border-radius: 5px;
+
+}
+
+p {
+	font-size: 2em;
+}
+
+.phone {
+	margin-top: 40px;
+	border-top: solid;
+	display: none;
+}
+
+.phone img {
+	display: inline-block;
+	border: solid;
+	margin-left: 10%;
+	margin-bottom: 20px;
+	width: 200px;
+	height: 200px;
+}
+
+.phone h2 {
+	display: inline-block;
+
+}
+
+footer {
+	bottom: 0;
+	left: 30%;
+}
+
+
+@media only screen and (max-width: 800px) {
+	.image img {
+		display: none;
+	}
+	.tree li {
+		display: inline-block;
+	}
+	.parents li {
+		position: relative;
+		left: 10%;
+	}
+
+	.family {
+		display: block;
+
+		width: 120%;
+	}
+	.title {
+		font-size: 140%;
+		margin-left: 5px;
+		font-weight: bold;
+	}
+
+	.phone {
+		display: block;
+}
+
+
+@media only screen and (min-width: 900px) {
+
+	footer {
+		position: fixed;
+		bottom: 0;
+	}
+
+}
+
+@media only screen and (max-width: 700px) {
+	.family {
+		margin-right: 30%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.phone h2 {
+		font-size: 1.4em;
+	}
+
+	.phoneneight {
+		min-height: 40px;
+	}
+
+}
+}
+
+
+
+
+
+
